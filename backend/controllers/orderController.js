@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 //placing ordder for frontend
 const placeOrder = async (req, res) => {
-    const frontendUrl = "http://localhost:5174"
+    const frontendUrl = "https://foodfry-main-frontend.onrender.com"
     try{
         const newOrder = new orderModel({
             userId: req.body.userId,
